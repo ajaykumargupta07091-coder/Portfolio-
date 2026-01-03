@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Ajay Kumar Gupta | portfolio</title>
+  <title>Ajay Kumar Gupta | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body{
       margin:0;
@@ -11,51 +13,121 @@
       color:white;
       text-align:center;
     }
+
     header{
-      padding:40px;
-      background:linear-gradient(135deg,#2563eb,#06b6d4);
+      padding:40px 20px;
+      background:linear-gradient(135deg,#2563eb,#0ea5e9);
     }
-    section{
-      padding:30px;
+
+    header h1{
+      margin:0;
+      font-size:28px;
     }
+
+    header p{
+      margin-top:8px;
+      font-size:16px;
+      opacity:0.9;
+    }
+
     .card{
       background:#1e293b;
-      margin:15px auto;
+      margin:20px auto;
       padding:20px;
-      max-width:400px;
-      border-radius:10px;
+      border-radius:12px;
+      max-width:90%;
+      box-shadow:0 10px 25px rgba(0,0,0,0.4);
+      text-align:left;
+    }
+
+    .card h2{
+      margin-top:0;
+      color:#38bdf8;
+    }
+
+    .card p{
+      line-height:1.6;
+      font-size:15px;
+    }
+
+    .skills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .skills span{
+      background:#0ea5e9;
+      padding:8px 14px;
+      border-radius:20px;
+      font-size:14px;
+    }
+
+    .social{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:15px;
+      margin-top:10px;
+    }
+
+    .social a{
+      text-decoration:none;
+      background:#22c55e;
+      color:black;
+      padding:10px 18px;
+      border-radius:8px;
+      font-weight:600;
+    }
+
+    footer{
+      margin:30px 0;
+      font-size:14px;
+      opacity:0.7;
     }
   </style>
 </head>
+
 <body>
 
-<header>
-  <h1>Ajay Kumar Gupta</h1>
-  <p>Web Developer (Beginner)</p>
-</header>
+  <header>
+    <h1>Ajay Kumar Gupta</h1>
+    <p>Aspiring Web Developer | B.Tech</p>
+  </header>
 
-<section>
-  <div class="card">
+  <section class="card">
     <h2>About Me</h2>
-<p>
-Hi, I’m Ajay Kumar Gupta, a B.Tech student and an aspiring web developer.
-I have hands-on knowledge of HTML, CSS, basic JavaScript, and Python.
-I enjoy building simple, clean, and responsive websites and continuously improving my skills through real projects.
-I actively use GitHub to share my work, Instagram to document my learning journey, and YouTube to learn and explore web development and technology-related content.
-My goal is to become a professional developer and create impactful digital solutions.
-</p>
-  </div>
+    <p>
+      Hi, I’m <strong>Ajay Kumar Gupta</strong>, a B.Tech student and beginner web developer.
+      I have hands-on knowledge of <strong>HTML, CSS, basic JavaScript, and Python</strong>.
+    </p>
+    <p>
+      I enjoy creating simple, clean, and responsive websites and sharing my learning journey on social media.
+    </p>
+  </section>
 
-  <div class="card">
-    <h3>Skills</h3>
-    <p>HTML | CSS | JavaScript (Basic)</p>
-  </div>
+  <section class="card">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Python</span>
+    </div>
+  </section>
 
-  <div class="card">
-    <h3>Contact</h3>
-    <p>Instagram • GitHub</p>
-  </div>
-</section>
+  <section class="card">
+    <h2>Connect With Me</h2>
+    <div class="social">
+      <a href="https://github.com/ajaykumargupta07091-coder" target="_blank">GitHub</a>
+      <a href="https://www.instagram.com/ajay_dailyvlogs" target="_blank">Instagram</a>
+      <a href="https://www.youtube.com/@TheAjayZone" target="_blank">YouTube</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Ajay Kumar Gupta
+  </footer>
 
 </body>
 </html>
