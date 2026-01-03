@@ -3,39 +3,42 @@
 <head>
 <meta charset="UTF-8">
 
-<!-- 🔥 SEO -->
+<!-- SEO -->
 <title>The Ajay Zone | Daily Life Vlogs, Reels & Shorts</title>
-<meta name="description" content="The Ajay Zone - Daily life vlogs, travel reels, Instagram reels and YouTube shorts by Ajay Kumar Gupta.">
+<meta name="description" content="The Ajay Zone - Daily life vlogs, Instagram reels, YouTube shorts and blogs by Ajay Kumar Gupta.">
 <meta name="keywords" content="The Ajay Zone, Ajay Daily Vlogs, Indian Vlogger, Instagram Reels, YouTube Shorts">
 <meta name="author" content="Ajay Kumar Gupta">
 <meta name="robots" content="index, follow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- 🔥 Social Preview -->
-<meta property="og:title" content="The Ajay Zone | Life • Travel • Vlogs">
-<meta property="og:description" content="Follow The Ajay Zone for real Indian daily life vlogs & reels">
+<meta property="og:title" content="The Ajay Zone">
+<meta property="og:description" content="Daily Life • Travel • Reels • Shorts">
 <meta property="og:image" content="your-banner.jpg">
-<meta property="og:type" content="website">
 
-<!-- Instagram Embed -->
 <script async src="https://www.instagram.com/embed.js"></script>
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Segoe UI',sans-serif;
+:root{
+  --bg:#020617;
+  --text:#ffffff;
+  --card:rgba(255,255,255,0.05);
+}
+.light{
+  --bg:#f5f5f5;
+  --text:#111;
+  --card:#ffffff;
 }
 
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,sans-serif}
 body{
-  background:radial-gradient(circle at top,#0f172a,#020617);
-  color:#fff;
+  background:var(--bg);
+  color:var(--text);
+  transition:0.4s;
 }
 
 /* HERO */
 header{
-  height:95vh;
+  height:75vh;
   background:url("your-banner.jpg") center/cover no-repeat;
   display:flex;
   align-items:center;
@@ -43,115 +46,100 @@ header{
   text-align:center;
   position:relative;
 }
-
 header::after{
   content:"";
   position:absolute;
   inset:0;
-  background:rgba(0,0,0,0.6);
+  background:rgba(0,0,0,0.55);
 }
-
-.hero{
-  position:relative;
-  z-index:2;
-}
-
+.hero{position:relative;z-index:2}
 .hero h1{
-  font-size:3.5rem;
-  letter-spacing:2px;
-  text-shadow:0 0 30px #7f00ff;
+  font-size:3.2rem;
+  background:linear-gradient(90deg,#ff0057,#7f00ff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.hero p{margin-top:8px;font-size:1.2rem}
+
+/* TOGGLE */
+.toggle{
+  position:fixed;
+  top:15px;
+  right:15px;
+  background:#7f00ff;
+  color:#fff;
+  padding:10px 14px;
+  border-radius:20px;
+  cursor:pointer;
+  z-index:1000;
 }
 
-.hero p{
-  margin-top:12px;
-  font-size:1.3rem;
-  opacity:0.9;
-}
-
-/* SOCIAL BUTTONS */
+/* SOCIAL */
 .social{
   display:flex;
   justify-content:center;
   gap:15px;
+  margin:25px 0;
   flex-wrap:wrap;
-  margin:40px 0;
 }
-
 .social a{
-  padding:14px 26px;
-  border-radius:40px;
-  text-decoration:none;
-  font-weight:600;
-  color:#fff;
+  padding:12px 24px;
+  border-radius:30px;
   background:linear-gradient(45deg,#ff0057,#7f00ff);
-  box-shadow:0 0 20px rgba(127,0,255,0.5);
-  transition:0.3s;
+  color:#fff;
+  text-decoration:none;
 }
 
-.social a:hover{
-  transform:translateY(-4px) scale(1.05);
+/* STATS */
+.stats{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  flex-wrap:wrap;
 }
-
-/* ABOUT */
-.about{
-  padding:60px 20px;
+.stat{
+  background:var(--card);
+  padding:20px 30px;
+  border-radius:20px;
   text-align:center;
 }
 
-.about h2{
-  font-size:2.2rem;
-  margin-bottom:20px;
+/* SECTIONS */
+section{
+  padding:55px 20px;
+  text-align:center;
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s;
+}
+section.show{
+  opacity:1;
+  transform:translateY(0);
 }
 
+/* ABOUT */
 .about p{
   max-width:800px;
   margin:auto;
   line-height:1.8;
-  font-size:1.05rem;
-  opacity:0.9;
 }
 
-/* CONTACT CARD */
+/* CONTACT */
 .contact{
-  margin:40px auto;
+  margin:30px auto;
   max-width:420px;
-  background:rgba(255,255,255,0.05);
-  padding:25px;
+  background:var(--card);
+  padding:20px;
   border-radius:20px;
-  text-align:center;
-  box-shadow:0 0 25px rgba(127,0,255,0.3);
-}
-
-.contact h3{
-  margin-bottom:10px;
-}
-
-.contact a{
-  color:#25D366;
-  font-size:1.2rem;
-  text-decoration:none;
-  font-weight:bold;
 }
 
 /* REELS */
-.reels{
-  padding:60px 20px;
-  background:#000;
-  text-align:center;
-}
-
-.reels h2{
-  margin-bottom:30px;
-  font-size:2rem;
-}
-
 .reel-box{
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
   gap:25px;
 }
-
 .instagram-media{
   max-width:320px !important;
   width:100% !important;
@@ -159,42 +147,59 @@ header::after{
 }
 
 /* YOUTUBE */
-.youtube{
-  padding:60px 20px;
-  text-align:center;
-}
-
-.youtube h2{
-  margin-bottom:30px;
-}
-
 .yt-box{
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
   gap:25px;
 }
-
 iframe{
   width:300px;
   height:530px;
   border-radius:18px;
-  box-shadow:0 0 20px rgba(255,0,87,0.4);
 }
 
-/* WHATSAPP FLOAT */
+/* BLOG */
+.blogs{
+  max-width:900px;
+  margin:auto;
+}
+.blog{
+  background:var(--card);
+  padding:20px;
+  margin:15px 0;
+  border-radius:15px;
+  text-align:left;
+}
+
+/* VISITOR */
+.visitor{
+  margin-top:15px;
+  font-weight:bold;
+}
+
+/* BUTTONS */
+.btn{
+  display:inline-block;
+  margin-top:15px;
+  padding:12px 22px;
+  background:#25D366;
+  color:#fff;
+  border-radius:30px;
+  text-decoration:none;
+}
+
+/* WHATSAPP */
 .whatsapp{
   position:fixed;
   bottom:20px;
   right:20px;
   background:#25D366;
-  color:#fff;
   padding:16px 18px;
   border-radius:50%;
   font-size:24px;
-  box-shadow:0 0 25px #25D366;
+  color:#fff;
   text-decoration:none;
-  z-index:1000;
 }
 
 /* FOOTER */
@@ -208,6 +213,8 @@ footer{
 
 <body>
 
+<div class="toggle" onclick="toggleMode()">🌙 / ☀️</div>
+
 <header>
   <div class="hero">
     <h1>The Ajay Zone</h1>
@@ -220,50 +227,87 @@ footer{
   <a href="https://www.youtube.com/@theajayzone" target="_blank">YouTube</a>
 </div>
 
+<div class="stats">
+  <div class="stat"><h3>100+</h3><p>Reels</p></div>
+  <div class="stat"><h3>Daily</h3><p>Uploads</p></div>
+  <div class="stat"><h3>India</h3><p>Vlogs</p></div>
+</div>
+
 <section class="about">
   <h2>About Me</h2>
   <p>
     Hello 👋 I'm Ajay Kumar Gupta, creator of <strong>The Ajay Zone</strong>.
-    I create real Indian daily life vlogs, travel videos, Instagram reels
-    and YouTube shorts. I am a B.Tech graduate with skills in Python,
-    HTML, CSS and basic JavaScript. This website connects all my social
-    platforms at one place.
+    I create daily life vlogs, Instagram reels and YouTube shorts.
+    B.Tech graduate with Python, HTML, CSS & basic JavaScript skills.
   </p>
 
   <div class="contact">
-    <h3>Contact Me</h3>
-    📞 <a href="tel:9905146354">+91 9905146354</a><br>
-    💬 <a href="https://wa.me/919905146354" target="_blank">WhatsApp Chat</a>
+    📞 <a href="tel:9905146354">+91 9905146354</a><br><br>
+    <a class="btn" href="resume.pdf" download>📄 Download Resume</a>
   </div>
 </section>
 
-<section class="reels">
+<section>
   <h2>Instagram Reels</h2>
   <div class="reel-box">
-
-    <!-- ADD YOUR REEL LINKS -->
     <blockquote class="instagram-media"
       data-instgrm-permalink="https://www.instagram.com/reel/REEL_LINK_1/"
       data-instgrm-version="14"></blockquote>
-
   </div>
 </section>
 
-<section class="youtube">
+<section>
   <h2>YouTube Shorts</h2>
   <div class="yt-box">
-
-    <!-- ADD YOUR SHORT IDS -->
     <iframe src="https://www.youtube.com/embed/SHORT_ID_1"></iframe>
-
   </div>
 </section>
+
+<section>
+  <h2>Blog (SEO Boost)</h2>
+  <div class="blogs">
+    <div class="blog">
+      <h3>Daily Life Vlogging in India</h3>
+      <p>Real Indian daily routine, travel moments and lifestyle content by The Ajay Zone.</p>
+    </div>
+    <div class="blog">
+      <h3>How I Create Instagram Reels</h3>
+      <p>Simple mobile editing, consistency and creativity for viral reels.</p>
+    </div>
+  </div>
+</section>
+
+<div class="visitor" id="visitor"></div>
 
 <a class="whatsapp" href="https://wa.me/919905146354" target="_blank">💬</a>
 
 <footer>
-  © 2026 The Ajay Zone | Built with ❤️ by Ajay
+  © 2026 The Ajay Zone | All Rights Reserved
 </footer>
+
+<script>
+/* DARK LIGHT */
+function toggleMode(){
+  document.body.classList.toggle("light");
+}
+
+/* SCROLL ANIMATION */
+const sections=document.querySelectorAll("section");
+window.addEventListener("scroll",()=>{
+  sections.forEach(sec=>{
+    const top=sec.getBoundingClientRect().top;
+    if(top<window.innerHeight-100){
+      sec.classList.add("show");
+    }
+  });
+});
+
+/* VISITOR COUNTER */
+let count=localStorage.getItem("visits") || 0;
+count++;
+localStorage.setItem("visits",count);
+document.getElementById("visitor").innerText="👀 Visitors: "+count;
+</script>
 
 </body>
 </html>
