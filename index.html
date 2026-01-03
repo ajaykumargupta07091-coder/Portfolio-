@@ -3,192 +3,169 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ajay | Social Media Handle</title>
+<title>Ajay Zone | Life • Travel • Vlogs</title>
+
+<!-- Instagram Embed -->
+<script async src="https://www.instagram.com/embed.js"></script>
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Segoe UI', sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 body{
-    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-    color:#fff;
+  background:#020617;
+  color:#fff;
 }
 
-/* ---------- HEADER ---------- */
+/* HERO */
 header{
-    text-align:center;
-    padding:40px 20px;
-}
-
-header img{
-    width:150px;
-    height:150px;
-    border-radius:50%;
-    border:4px solid #00ffd5;
-    object-fit:cover;
+  height:90vh;
+  background:url("your-banner.jpg") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
 }
 
 header h1{
-    margin-top:15px;
-    font-size:28px;
+  font-size:3rem;
+  text-shadow:0 0 20px black;
 }
 
 header p{
-    opacity:0.8;
-    margin-top:5px;
+  margin-top:10px;
+  font-size:1.2rem;
+  opacity:0.9;
 }
 
-/* ---------- SOCIAL BUTTONS ---------- */
-.social-links{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    margin:30px 0;
-    flex-wrap:wrap;
+/* SOCIAL BUTTONS */
+.social{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin:30px 0;
 }
 
-.social-links a{
-    text-decoration:none;
-    padding:12px 22px;
-    border-radius:30px;
-    color:#fff;
-    font-weight:bold;
-    transition:0.3s;
+.social a{
+  padding:12px 22px;
+  background:linear-gradient(45deg,#ff0057,#7f00ff);
+  color:white;
+  text-decoration:none;
+  border-radius:30px;
+  font-weight:bold;
+  transition:0.3s;
 }
 
-.instagram{background:#e1306c;}
-.youtube{background:#ff0000;}
-.github{background:#333;}
-
-.social-links a:hover{
-    transform:scale(1.1);
-    box-shadow:0 0 15px rgba(255,255,255,0.4);
+.social a:hover{
+  transform:scale(1.05);
 }
 
-/* ---------- ABOUT ---------- */
-section{
-    max-width:900px;
-    margin:auto;
-    padding:20px;
-}
-
+/* ABOUT */
 .about{
-    background:rgba(255,255,255,0.08);
-    border-radius:15px;
-    padding:25px;
-    margin-bottom:30px;
+  padding:50px 20px;
+  text-align:center;
 }
 
 .about h2{
-    margin-bottom:10px;
-    color:#00ffd5;
+  font-size:2rem;
+  margin-bottom:15px;
 }
 
-/* ---------- SKILLS ---------- */
-.skills span{
-    display:inline-block;
-    margin:8px;
-    padding:8px 16px;
-    border-radius:20px;
-    background:#00ffd5;
-    color:#000;
-    font-weight:bold;
+.about p{
+  max-width:700px;
+  margin:auto;
+  line-height:1.7;
+  opacity:0.9;
 }
 
-/* ---------- GALLERY ---------- */
-.gallery{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    gap:15px;
+/* REELS */
+.reels{
+  padding:50px 20px;
+  background:#000;
+  text-align:center;
 }
 
-.gallery img{
-    width:100%;
-    border-radius:15px;
-    transition:0.4s;
+.reels h2{
+  margin-bottom:30px;
 }
 
-.gallery img:hover{
-    transform:scale(1.05);
-    box-shadow:0 0 20px rgba(0,255,213,0.6);
+.reel-box{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
 }
 
-/* ---------- FOOTER ---------- */
+.instagram-media{
+  max-width:320px !important;
+  width:100% !important;
+  border-radius:15px;
+  overflow:hidden;
+}
+
+/* FOOTER */
 footer{
-    text-align:center;
-    padding:20px;
-    opacity:0.7;
-}
-
-/* ---------- ANIMATION ---------- */
-.fade{
-    animation:fadeIn 1.5s ease;
-}
-
-@keyframes fadeIn{
-    from{opacity:0; transform:translateY(20px);}
-    to{opacity:1; transform:translateY(0);}
+  text-align:center;
+  padding:20px;
+  background:#020617;
+  opacity:0.7;
 }
 </style>
 </head>
 
 <body>
 
-<header class="fade">
-    <!-- Profile Photo -->
-    <img src="images/photo1.jpg" alt="Ajay">
-
-    <h1>Ajay Kumar Gupta</h1>
-    <p>B.Tech | Python • HTML • CSS • JavaScript</p>
+<!-- HERO -->
+<header>
+  <div>
+    <h1>Ajay Zone</h1>
+    <p>Life | Travel | Daily Vlogs</p>
+  </div>
 </header>
 
-<div class="social-links fade">
-    <a class="instagram" href="https://www.instagram.com/ajay_dailyvlogs" target="_blank">Instagram</a>
-    <a class="youtube" href="https://www.youtube.com/@TheAjayZone" target="_blank">YouTube</a>
-    <a class="github" href="https://github.com/" target="_blank">GitHub</a>
+<!-- SOCIAL LINKS -->
+<div class="social">
+  <a href="https://www.instagram.com/ajay_dailyvlogs" target="_blank">Instagram</a>
+  <a href="https://www.youtube.com/@theajayzone" target="_blank">YouTube</a>
+  <a href="https://github.com/" target="_blank">GitHub</a>
 </div>
 
-<section class="about fade">
-    <h2>About Me</h2>
-    <p>
-        Hi 👋 I’m Ajay, a B.Tech graduate and passionate developer & content creator.
-        I create daily life vlogs on Instagram and YouTube, and I love building
-        modern websites using HTML, CSS, JavaScript, and Python.
-    </p>
-
-    <h3 style="margin-top:15px;color:#00ffd5;">Skills</h3>
-    <div class="skills">
-        <span>Python</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-    </div>
+<!-- ABOUT -->
+<section class="about">
+  <h2>About Me</h2>
+  <p>
+    Hello 👋 I'm Ajay, a B.Tech graduate and content creator.
+    I share real Indian daily life vlogs, travel moments and creative videos.
+    I also have technical skills in Python, HTML, CSS and basic JavaScript.
+    This website connects my Instagram, YouTube and development journey in one place.
+  </p>
 </section>
 
-<section class="fade">
-    <h2 style="color:#00ffd5;margin-bottom:15px;">Photo Gallery</h2>
-    <div class="gallery">
-        <img src="images/photo1.jpg">
-        <img src="images/photo2.jpg">
-        <img src="images/photo3.jpg">
-        <img src="images/photo4.jpg">
-    </div>
+<!-- INSTAGRAM REELS -->
+<section class="reels">
+  <h2>Latest Instagram Reels</h2>
+
+  <div class="reel-box">
+    <!-- REPLACE LINKS WITH YOUR REEL LINKS -->
+    <blockquote class="instagram-media"
+      data-instgrm-permalink="https://www.instagram.com/reel/REEL_LINK_1/"
+      data-instgrm-version="14">
+    </blockquote>
+
+    <blockquote class="instagram-media"
+      data-instgrm-permalink="https://www.instagram.com/reel/REEL_LINK_2/"
+      data-instgrm-version="14">
+    </blockquote>
+  </div>
 </section>
 
 <footer>
-    © 2026 Ajay | Social Media Handle Website
+  © 2026 Ajay Zone | Life • Travel • Vlogs
 </footer>
-
-<script>
-// Simple welcome animation
-window.onload = () => {
-    console.log("Welcome to Ajay's Social Media Website 🚀");
-};
-</script>
 
 </body>
 </html>
