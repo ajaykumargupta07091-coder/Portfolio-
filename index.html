@@ -2,10 +2,25 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ajay Zone | Life • Travel • Vlogs</title>
 
-<!-- Instagram Embed -->
+<!-- ✅ SEO BASIC -->
+<title>Ajay Zone | Daily Life Vlogs, Travel & Reels</title>
+<meta name="description" content="Ajay Zone - Daily life vlogs, travel videos, Instagram reels and YouTube shorts by Ajay Kumar Gupta.">
+<meta name="keywords" content="Ajay Zone, Ajay Daily Vlogs, Indian Vlogger, Instagram Reels, YouTube Shorts, Travel Vlogs">
+<meta name="author" content="Ajay Kumar Gupta">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ✅ SOCIAL PREVIEW (WhatsApp / Instagram) -->
+<meta property="og:title" content="Ajay Zone | Life • Travel • Vlogs">
+<meta property="og:description" content="Follow Ajay Zone for real Indian daily life vlogs, travel reels and shorts.">
+<meta property="og:image" content="your-banner.jpg">
+<meta property="og:type" content="website">
+
+<!-- GOOGLE VERIFICATION (PASTE LATER) -->
+<meta name="google-site-verification" content="PASTE_CODE_HERE">
+
+<!-- INSTAGRAM EMBED -->
 <script async src="https://www.instagram.com/embed.js"></script>
 
 <style>
@@ -13,7 +28,7 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family:Segoe UI, sans-serif;
 }
 
 body{
@@ -39,13 +54,13 @@ header h1{
 header p{
   margin-top:10px;
   font-size:1.2rem;
-  opacity:0.9;
 }
 
 /* SOCIAL BUTTONS */
 .social{
   display:flex;
   justify-content:center;
+  flex-wrap:wrap;
   gap:15px;
   margin:30px 0;
 }
@@ -53,7 +68,7 @@ header p{
 .social a{
   padding:12px 22px;
   background:linear-gradient(45deg,#ff0057,#7f00ff);
-  color:white;
+  color:#fff;
   text-decoration:none;
   border-radius:30px;
   font-weight:bold;
@@ -76,13 +91,13 @@ header p{
 }
 
 .about p{
-  max-width:700px;
+  max-width:750px;
   margin:auto;
   line-height:1.7;
   opacity:0.9;
 }
 
-/* REELS */
+/* INSTAGRAM REELS */
 .reels{
   padding:50px 20px;
   background:#000;
@@ -104,14 +119,45 @@ header p{
   max-width:320px !important;
   width:100% !important;
   border-radius:15px;
-  overflow:hidden;
+}
+
+/* YOUTUBE SHORTS */
+.youtube{
+  padding:50px 20px;
+  text-align:center;
+}
+
+.yt-box{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+
+iframe{
+  width:300px;
+  height:530px;
+  border-radius:15px;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:15px 18px;
+  border-radius:50%;
+  font-size:24px;
+  text-decoration:none;
+  box-shadow:0 0 15px #25D366;
 }
 
 /* FOOTER */
 footer{
   text-align:center;
   padding:20px;
-  background:#020617;
   opacity:0.7;
 }
 </style>
@@ -119,52 +165,54 @@ footer{
 
 <body>
 
-<!-- HERO -->
 <header>
   <div>
-    <h1>Ajay Zone</h1>
-    <p>Life | Travel | Daily Vlogs</p>
+    <h1>Ajay Zone – Daily Life Vlogs</h1>
+    <p>Life | Travel | Instagram Reels | YouTube Shorts</p>
   </div>
 </header>
 
-<!-- SOCIAL LINKS -->
 <div class="social">
   <a href="https://www.instagram.com/ajay_dailyvlogs" target="_blank">Instagram</a>
   <a href="https://www.youtube.com/@theajayzone" target="_blank">YouTube</a>
-  <a href="https://github.com/" target="_blank">GitHub</a>
 </div>
 
-<!-- ABOUT -->
 <section class="about">
-  <h2>About Me</h2>
+  <h2>About Ajay Kumar Gupta</h2>
   <p>
-    Hello 👋 I'm Ajay, a B.Tech graduate and content creator.
-    I share real Indian daily life vlogs, travel moments and creative videos.
+    I'm Ajay, a B.Tech graduate and Indian content creator.
+    I create daily life vlogs, travel videos, Instagram reels and YouTube shorts.
     I also have technical skills in Python, HTML, CSS and basic JavaScript.
-    This website connects my Instagram, YouTube and development journey in one place.
+    This website connects all my social media platforms in one place.
   </p>
 </section>
 
-<!-- INSTAGRAM REELS -->
 <section class="reels">
   <h2>Latest Instagram Reels</h2>
-
   <div class="reel-box">
-    <!-- REPLACE LINKS WITH YOUR REEL LINKS -->
+
+    <!-- ADD YOUR REEL LINKS -->
     <blockquote class="instagram-media"
       data-instgrm-permalink="https://www.instagram.com/reel/REEL_LINK_1/"
-      data-instgrm-version="14">
-    </blockquote>
+      data-instgrm-version="14"></blockquote>
 
-    <blockquote class="instagram-media"
-      data-instgrm-permalink="https://www.instagram.com/reel/REEL_LINK_2/"
-      data-instgrm-version="14">
-    </blockquote>
   </div>
 </section>
 
+<section class="youtube">
+  <h2>YouTube Shorts</h2>
+  <div class="yt-box">
+
+    <!-- ADD SHORT IDS -->
+    <iframe src="https://www.youtube.com/embed/SHORT_ID_1"></iframe>
+
+  </div>
+</section>
+
+<a class="whatsapp" href="https://wa.me/919905146354" target="_blank">💬</a>
+
 <footer>
-  © 2026 Ajay Zone | Life • Travel • Vlogs
+  © 2026 Ajay Zone | All Rights Reserved
 </footer>
 
 </body>
