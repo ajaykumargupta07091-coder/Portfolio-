@@ -3,24 +3,21 @@
 <head>
 <meta charset="UTF-8">
 
-<!-- ✅ SEO BASIC -->
-<title>Ajay Zone | Daily Life Vlogs, Travel & Reels</title>
-<meta name="description" content="Ajay Zone - Daily life vlogs, travel videos, Instagram reels and YouTube shorts by Ajay Kumar Gupta.">
-<meta name="keywords" content="Ajay Zone, Ajay Daily Vlogs, Indian Vlogger, Instagram Reels, YouTube Shorts, Travel Vlogs">
+<!-- 🔥 SEO -->
+<title>The Ajay Zone | Daily Life Vlogs, Reels & Shorts</title>
+<meta name="description" content="The Ajay Zone - Daily life vlogs, travel reels, Instagram reels and YouTube shorts by Ajay Kumar Gupta.">
+<meta name="keywords" content="The Ajay Zone, Ajay Daily Vlogs, Indian Vlogger, Instagram Reels, YouTube Shorts">
 <meta name="author" content="Ajay Kumar Gupta">
 <meta name="robots" content="index, follow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ✅ SOCIAL PREVIEW (WhatsApp / Instagram) -->
-<meta property="og:title" content="Ajay Zone | Life • Travel • Vlogs">
-<meta property="og:description" content="Follow Ajay Zone for real Indian daily life vlogs, travel reels and shorts.">
+<!-- 🔥 Social Preview -->
+<meta property="og:title" content="The Ajay Zone | Life • Travel • Vlogs">
+<meta property="og:description" content="Follow The Ajay Zone for real Indian daily life vlogs & reels">
 <meta property="og:image" content="your-banner.jpg">
 <meta property="og:type" content="website">
 
-<!-- GOOGLE VERIFICATION (PASTE LATER) -->
-<meta name="google-site-verification" content="PASTE_CODE_HERE">
-
-<!-- INSTAGRAM EMBED -->
+<!-- Instagram Embed -->
 <script async src="https://www.instagram.com/embed.js"></script>
 
 <style>
@@ -28,136 +25,182 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:Segoe UI, sans-serif;
+  font-family:'Segoe UI',sans-serif;
 }
 
 body{
-  background:#020617;
+  background:radial-gradient(circle at top,#0f172a,#020617);
   color:#fff;
 }
 
 /* HERO */
 header{
-  height:90vh;
+  height:95vh;
   background:url("your-banner.jpg") center/cover no-repeat;
   display:flex;
   align-items:center;
   justify-content:center;
   text-align:center;
+  position:relative;
 }
 
-header h1{
-  font-size:3rem;
-  text-shadow:0 0 20px black;
+header::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.6);
 }
 
-header p{
-  margin-top:10px;
-  font-size:1.2rem;
+.hero{
+  position:relative;
+  z-index:2;
+}
+
+.hero h1{
+  font-size:3.5rem;
+  letter-spacing:2px;
+  text-shadow:0 0 30px #7f00ff;
+}
+
+.hero p{
+  margin-top:12px;
+  font-size:1.3rem;
+  opacity:0.9;
 }
 
 /* SOCIAL BUTTONS */
 .social{
   display:flex;
   justify-content:center;
-  flex-wrap:wrap;
   gap:15px;
-  margin:30px 0;
+  flex-wrap:wrap;
+  margin:40px 0;
 }
 
 .social a{
-  padding:12px 22px;
-  background:linear-gradient(45deg,#ff0057,#7f00ff);
-  color:#fff;
+  padding:14px 26px;
+  border-radius:40px;
   text-decoration:none;
-  border-radius:30px;
-  font-weight:bold;
+  font-weight:600;
+  color:#fff;
+  background:linear-gradient(45deg,#ff0057,#7f00ff);
+  box-shadow:0 0 20px rgba(127,0,255,0.5);
   transition:0.3s;
 }
 
 .social a:hover{
-  transform:scale(1.05);
+  transform:translateY(-4px) scale(1.05);
 }
 
 /* ABOUT */
 .about{
-  padding:50px 20px;
+  padding:60px 20px;
   text-align:center;
 }
 
 .about h2{
-  font-size:2rem;
-  margin-bottom:15px;
+  font-size:2.2rem;
+  margin-bottom:20px;
 }
 
 .about p{
-  max-width:750px;
+  max-width:800px;
   margin:auto;
-  line-height:1.7;
+  line-height:1.8;
+  font-size:1.05rem;
   opacity:0.9;
 }
 
-/* INSTAGRAM REELS */
+/* CONTACT CARD */
+.contact{
+  margin:40px auto;
+  max-width:420px;
+  background:rgba(255,255,255,0.05);
+  padding:25px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 0 25px rgba(127,0,255,0.3);
+}
+
+.contact h3{
+  margin-bottom:10px;
+}
+
+.contact a{
+  color:#25D366;
+  font-size:1.2rem;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* REELS */
 .reels{
-  padding:50px 20px;
+  padding:60px 20px;
   background:#000;
   text-align:center;
 }
 
 .reels h2{
   margin-bottom:30px;
+  font-size:2rem;
 }
 
 .reel-box{
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
-  gap:20px;
+  gap:25px;
 }
 
 .instagram-media{
   max-width:320px !important;
   width:100% !important;
-  border-radius:15px;
+  border-radius:18px;
 }
 
-/* YOUTUBE SHORTS */
+/* YOUTUBE */
 .youtube{
-  padding:50px 20px;
+  padding:60px 20px;
   text-align:center;
+}
+
+.youtube h2{
+  margin-bottom:30px;
 }
 
 .yt-box{
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
-  gap:20px;
+  gap:25px;
 }
 
 iframe{
   width:300px;
   height:530px;
-  border-radius:15px;
+  border-radius:18px;
+  box-shadow:0 0 20px rgba(255,0,87,0.4);
 }
 
-/* WHATSAPP BUTTON */
+/* WHATSAPP FLOAT */
 .whatsapp{
   position:fixed;
   bottom:20px;
   right:20px;
   background:#25D366;
-  color:white;
-  padding:15px 18px;
+  color:#fff;
+  padding:16px 18px;
   border-radius:50%;
   font-size:24px;
+  box-shadow:0 0 25px #25D366;
   text-decoration:none;
-  box-shadow:0 0 15px #25D366;
+  z-index:1000;
 }
 
 /* FOOTER */
 footer{
+  padding:25px;
   text-align:center;
-  padding:20px;
   opacity:0.7;
 }
 </style>
@@ -166,9 +209,9 @@ footer{
 <body>
 
 <header>
-  <div>
-    <h1>Ajay Zone – Daily Life Vlogs</h1>
-    <p>Life | Travel | Instagram Reels | YouTube Shorts</p>
+  <div class="hero">
+    <h1>The Ajay Zone</h1>
+    <p>Daily Life • Travel • Reels • Shorts</p>
   </div>
 </header>
 
@@ -178,17 +221,24 @@ footer{
 </div>
 
 <section class="about">
-  <h2>About Ajay Kumar Gupta</h2>
+  <h2>About Me</h2>
   <p>
-    I'm Ajay, a B.Tech graduate and Indian content creator.
-    I create daily life vlogs, travel videos, Instagram reels and YouTube shorts.
-    I also have technical skills in Python, HTML, CSS and basic JavaScript.
-    This website connects all my social media platforms in one place.
+    Hello 👋 I'm Ajay Kumar Gupta, creator of <strong>The Ajay Zone</strong>.
+    I create real Indian daily life vlogs, travel videos, Instagram reels
+    and YouTube shorts. I am a B.Tech graduate with skills in Python,
+    HTML, CSS and basic JavaScript. This website connects all my social
+    platforms at one place.
   </p>
+
+  <div class="contact">
+    <h3>Contact Me</h3>
+    📞 <a href="tel:9905146354">+91 9905146354</a><br>
+    💬 <a href="https://wa.me/919905146354" target="_blank">WhatsApp Chat</a>
+  </div>
 </section>
 
 <section class="reels">
-  <h2>Latest Instagram Reels</h2>
+  <h2>Instagram Reels</h2>
   <div class="reel-box">
 
     <!-- ADD YOUR REEL LINKS -->
@@ -203,7 +253,7 @@ footer{
   <h2>YouTube Shorts</h2>
   <div class="yt-box">
 
-    <!-- ADD SHORT IDS -->
+    <!-- ADD YOUR SHORT IDS -->
     <iframe src="https://www.youtube.com/embed/SHORT_ID_1"></iframe>
 
   </div>
@@ -212,7 +262,7 @@ footer{
 <a class="whatsapp" href="https://wa.me/919905146354" target="_blank">💬</a>
 
 <footer>
-  © 2026 Ajay Zone | All Rights Reserved
+  © 2026 The Ajay Zone | Built with ❤️ by Ajay
 </footer>
 
 </body>
