@@ -2,170 +2,193 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Ajay Kumar Gupta | Web Developer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ajay | Social Media Handle</title>
 
 <style>
-body{
-  margin:0;
-  font-family:Segoe UI, Arial, sans-serif;
-  background:#0f172a;
-  color:#e5e7eb;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
+body{
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:#fff;
+}
+
+/* ---------- HEADER ---------- */
 header{
-  text-align:center;
-  padding:50px 20px;
-  background:linear-gradient(135deg,#2563eb,#06b6d4);
+    text-align:center;
+    padding:40px 20px;
+}
+
+header img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:4px solid #00ffd5;
+    object-fit:cover;
 }
 
 header h1{
-  margin:0;
-  font-size:32px;
+    margin-top:15px;
+    font-size:28px;
 }
 
 header p{
-  margin-top:10px;
-  font-size:17px;
-  opacity:0.95;
+    opacity:0.8;
+    margin-top:5px;
 }
 
-.btn{
-  display:inline-block;
-  margin-top:20px;
-  padding:12px 22px;
-  background:#22c55e;
-  color:#000;
-  text-decoration:none;
-  font-weight:600;
-  border-radius:8px;
+/* ---------- SOCIAL BUTTONS ---------- */
+.social-links{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin:30px 0;
+    flex-wrap:wrap;
 }
 
+.social-links a{
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:30px;
+    color:#fff;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.instagram{background:#e1306c;}
+.youtube{background:#ff0000;}
+.github{background:#333;}
+
+.social-links a:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 15px rgba(255,255,255,0.4);
+}
+
+/* ---------- ABOUT ---------- */
 section{
-  max-width:900px;
-  margin:30px auto;
-  padding:0 20px;
+    max-width:900px;
+    margin:auto;
+    padding:20px;
 }
 
-.card{
-  background:#1e293b;
-  padding:25px;
-  border-radius:14px;
-  margin-bottom:25px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+.about{
+    background:rgba(255,255,255,0.08);
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:30px;
 }
 
-.card h2{
-  margin-top:0;
-  color:#38bdf8;
+.about h2{
+    margin-bottom:10px;
+    color:#00ffd5;
 }
 
-.card p{
-  line-height:1.7;
-  font-size:15px;
-}
-
-.skills{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
-}
-
+/* ---------- SKILLS ---------- */
 .skills span{
-  background:#334155;
-  padding:10px 16px;
-  border-radius:20px;
-  font-size:14px;
+    display:inline-block;
+    margin:8px;
+    padding:8px 16px;
+    border-radius:20px;
+    background:#00ffd5;
+    color:#000;
+    font-weight:bold;
 }
 
-.projects li{
-  margin-bottom:10px;
+/* ---------- GALLERY ---------- */
+.gallery{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
 }
 
-.social{
-  display:flex;
-  flex-wrap:wrap;
-  gap:15px;
+.gallery img{
+    width:100%;
+    border-radius:15px;
+    transition:0.4s;
 }
 
-.social a{
-  text-decoration:none;
-  padding:12px 18px;
-  border-radius:8px;
-  font-weight:600;
-  color:black;
+.gallery img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(0,255,213,0.6);
 }
 
-.github{background:#facc15;}
-.insta{background:#ec4899;}
-.youtube{background:#ef4444;}
-
+/* ---------- FOOTER ---------- */
 footer{
-  text-align:center;
-  margin:40px 0 20px;
-  font-size:14px;
-  opacity:0.7;
+    text-align:center;
+    padding:20px;
+    opacity:0.7;
+}
+
+/* ---------- ANIMATION ---------- */
+.fade{
+    animation:fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
 }
 </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Ajay Kumar Gupta</h1>
-  <p>B.Tech Student | Web Developer (Beginner) | Content Creator</p>
-  <a class="btn" href="#">Download Resume</a>
+<header class="fade">
+    <!-- Profile Photo -->
+    <img src="images/photo1.jpg" alt="Ajay">
+
+    <h1>Ajay Kumar Gupta</h1>
+    <p>B.Tech | Python • HTML • CSS • JavaScript</p>
 </header>
 
-<section>
-
-<div class="card">
-  <h2>About Me</h2>
-  <p>
-    Hi, I’m <strong>Ajay Kumar Gupta</strong>, a B.Tech student and aspiring web developer.
-    I work with <strong>HTML, CSS, basic JavaScript, and Python</strong>.
-  </p>
-  <p>
-    Along with coding, I actively share my learning and daily life through Instagram
-    and YouTube. My goal is to grow as a developer and build real-world projects.
-  </p>
-</div>
-
-<div class="card">
-  <h2>Skills</h2>
-  <div class="skills">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    <span>Python</span>
-    <span>Git & GitHub</span>
-  </div>
-</div>
-
-<div class="card">
-  <h2>Projects</h2>
-  <ul class="projects">
-    <li>✔ Personal Portfolio Website</li>
-    <li>✔ Social Media Landing Page</li>
-    <li>✔ Basic E-commerce UI (HTML/CSS)</li>
-    <li>✔ Practice Python Programs</li>
-  </ul>
-</div>
-
-<div class="card">
-  <h2>Connect With Me</h2>
-  <div class="social">
-    <a class="github" href="https://github.com/ajaykumargupta07091-coder" target="_blank">GitHub</a>
-    <a class="insta" href="https://www.instagram.com/ajay_dailyvlogs" target="_blank">Instagram</a>
+<div class="social-links fade">
+    <a class="instagram" href="https://www.instagram.com/ajay_dailyvlogs" target="_blank">Instagram</a>
     <a class="youtube" href="https://www.youtube.com/@TheAjayZone" target="_blank">YouTube</a>
-  </div>
+    <a class="github" href="https://github.com/" target="_blank">GitHub</a>
 </div>
 
+<section class="about fade">
+    <h2>About Me</h2>
+    <p>
+        Hi 👋 I’m Ajay, a B.Tech graduate and passionate developer & content creator.
+        I create daily life vlogs on Instagram and YouTube, and I love building
+        modern websites using HTML, CSS, JavaScript, and Python.
+    </p>
+
+    <h3 style="margin-top:15px;color:#00ffd5;">Skills</h3>
+    <div class="skills">
+        <span>Python</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+    </div>
+</section>
+
+<section class="fade">
+    <h2 style="color:#00ffd5;margin-bottom:15px;">Photo Gallery</h2>
+    <div class="gallery">
+        <img src="images/photo1.jpg">
+        <img src="images/photo2.jpg">
+        <img src="images/photo3.jpg">
+        <img src="images/photo4.jpg">
+    </div>
 </section>
 
 <footer>
-  © 2026 Ajay Kumar Gupta | Built with ❤️
+    © 2026 Ajay | Social Media Handle Website
 </footer>
+
+<script>
+// Simple welcome animation
+window.onload = () => {
+    console.log("Welcome to Ajay's Social Media Website 🚀");
+};
+</script>
 
 </body>
 </html>
